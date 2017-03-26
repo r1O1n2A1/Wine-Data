@@ -16,9 +16,16 @@ import fr.afcepf.atod.vin.data.exception.WineErrorCode;
 import fr.afcepf.atod.vin.data.exception.WineException;
 import fr.afcepf.atod.wine.data.api.IDaoGeneric;
 
+/**
+ * @author ronan
+ * Implement Generic DAO 
+ * @param <Obj> {@link Object}
+ * @param <ID> 
+ */
 @Service
 @Transactional
-public abstract class DaoGeneric<Obj, ID extends Serializable> implements IDaoGeneric<Obj, ID> {
+public abstract class DaoGeneric<Obj, ID extends Serializable> 
+	implements IDaoGeneric<Obj, ID> {
 	@Autowired
 	protected SessionFactory sf;
 
