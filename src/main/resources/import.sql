@@ -17,7 +17,7 @@
 
 -- Select database to use
 
-USE wine_bdd_test;
+USE wine_bdd;
 
 --
 -- Table structure for table `adress`
